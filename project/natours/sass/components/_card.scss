@@ -2,7 +2,7 @@
   perspective: 150rem;
   position: relative;
   height: 52rem;
-
+  backface-visibility: hidden;
   &__side {
     height: 52rem;
     border-radius: 5px;
