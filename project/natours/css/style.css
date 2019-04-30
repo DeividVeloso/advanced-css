@@ -1,3 +1,22 @@
+@charset "UTF-8";
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet Portrait
+900 - 1200px:   Tablet Ladscape
+[1200 - 1800]: é onde aplicamos nosso style padrão
+1800 +:   Big screens
+
+  $breakpoints  arguement choices:
+
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  1em = 16px
+
+
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -40,6 +59,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -230,7 +258,8 @@ body {
 .card {
   perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 52rem;
+  backface-visibility: hidden; }
   .card__side {
     height: 52rem;
     border-radius: 5px;
