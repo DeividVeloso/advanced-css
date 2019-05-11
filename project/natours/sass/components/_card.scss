@@ -2,7 +2,6 @@
   perspective: 150rem;
   position: relative;
   height: 52rem;
-  backface-visibility: hidden;
   &__side {
     height: 52rem;
     border-radius: 5px;
@@ -11,7 +10,10 @@
     top: 0;
     left: 0;
     width: 100%;
+
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     overflow: hidden;
 
