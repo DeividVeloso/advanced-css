@@ -31,8 +31,6 @@
 
 .hotel-view {
   flex: 1;
-  //Only to test
-  height: 80rem;
 }
 
 .detail {
@@ -47,6 +45,7 @@
   flex: 0 0 60%;
   margin-right: 4.5rem;
   box-shadow: var(--shadow-light);
+  padding: 3rem;
 }
 
 .user-reviews {
