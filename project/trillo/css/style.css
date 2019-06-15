@@ -27,7 +27,7 @@ Grey dark 3: #999
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0.06);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   --line: 1px solid var(--color-grey-light-2); }
 
 * {
@@ -96,7 +96,6 @@ body {
   padding: 3rem; }
 
 .user-reviews {
-  background-color: yellowgreen;
   flex: 1; }
 
 .logo {
@@ -354,3 +353,12 @@ Hotel Overview
     border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+
+/*
+ Reviews
+*/
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem; }
